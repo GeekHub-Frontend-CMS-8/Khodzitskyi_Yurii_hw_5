@@ -22,18 +22,107 @@ header a {
 }
 /*HERO*/
 .hero-section {
+    background-color: #767e8c;/*if background-image not work*/
     background-image: url("../img/hero-background.png");
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 .hero-container {
     margin: auto;
-    width: 615px;
+    max-width: 615px;
     text-align: center;
 }
 .hero-container h1 {
+    padding: 180px 5px 15px 5px;
     border-bottom: 2px solid #15a4fa;
     color: #ffffff;
     font-size: 120px;
     font-weight: 700;
+}
+.hero-container p{
+    padding: 40px 0 30px 0;
+    color: #fff;
+}
+.hero-button {
+    margin: 30px 0 90px 0;
+    padding: 20px 35px;
+}
+.blue-border-button {
+    color: #fff;
+    border: 1px solid #15a4fa;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.blue-border-button:hover {
+    background-color: #15a4fa;
+    transition: 0.3s;
+}
+.hero-little-arrow {
+    margin: 60px auto;
+    padding: 30px;
+}
+/*SIMPLE PURE*/
+.simple-pure-section{
+    background-color: #f6f9f9;
+}
+.simple-pure-container {
+    padding: 80px 0;
+    max-width: 1170px;
+    margin: auto;
+    text-align: center;
+}
+.simple-pure-container h2 {
+    color: #2d3950;
+    font-size: 40px;
+    font-weight: 400;
+}
+.simple-pure-container p{
+    padding: 30px;
+    color: #999999;
+    font-size: 20px;
+    font-weight: 400;
+}
+/*FEATURE SECTION*/
+.feature-container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.feature-flex-element {
+    margin: 50px;
+    flex-basis: 230px;
+    flex-grow: 1;
+    text-align: center;
+}
 
+
+
+
+
+/*RESPONSIVE MEDIA*/
+@media only screen and (max-width: 480px) {
+    .hero-container h1 {
+        padding: 60px 5px 5px 5px;
+        font-size: 28vw;
+    }
+    .hero-button {
+        margin: 30px 0 50px 0;
+    }
+    .header-container {
+        padding: 15px;
+    }
+    .simple-pure-container {
+        padding: 25px 0;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .hero-section {
+        background-size: cover;
+    }
 }
