@@ -1,0 +1,39 @@
+/*FONT*/
+body {
+    font-family: 'Lato', sans-serif;
+}
+/* HEADER*/
+header {
+    background-color: #f6f9f9;
+}
+.header-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px;
+    margin: auto;
+    max-width: 1170px;
+}
+header a {
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #2d3950;
+    font-weight: 700;
+}
+/*HERO*/
+.hero-section {
+    background-image: url("../img/hero-background.png");
+    background-size: 100%;
+}
+.hero-container {
+    margin: auto;
+    width: 615px;
+    text-align: center;
+}
+.hero-container h1 {
+    border-bottom: 2px solid #15a4fa;
+    color: #ffffff;
+    font-size: 120px;
+    font-weight: 700;
+
+}
