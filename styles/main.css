@@ -112,6 +112,182 @@ header a {
     font-weight: 400;
     line-height: 20px;
 }
+/*PORTFOLIO SECTION*/
+.portfolio-section {
+    background-color: #f6f9f9;
+}
+.portfolio-header {
+    max-width: 1170px;
+    padding: 70px 0;
+    margin: auto;
+    text-align: center;
+}
+.portfolio-header h2 {
+    padding: 10px;
+    color: #2d3950;
+    font-size: 41px;
+    font-weight: 400;
+}
+.portfolio-header p {
+    padding: 10px;
+    color: #909090;
+    font-size: 15px;
+    font-weight: 400;
+}
+.portfolio-image-container {
+    max-width: 1170px;
+    padding-bottom: 100px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    flex-justify: space-around;
+}
+.portfolio-image-element {
+    position: relative;
+    margin: 15px;
+    flex: 1 1 360px;
+    text-align: center;
+}
+.portfolio-image-element:hover .portfolio-hover-block {
+    transition: 0.3s;
+    opacity: 0.9;
+}
+.portfolio-image-element img {
+    width: 100%;
+}
+.portfolio-hover-block {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    background-color: #15a4fa;
+    transition: 0.3s;
+}
+.portfolio-hover-button {
+    margin: 5px;
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+.portfolio-hover-button:hover {
+    background-color: #1bafff;
+}
+/*Stay with container*/
+.stay-with-us {
+    background-image: url("../img/stay-with-us-back.png");
+    background-color: #767e8c;/*if background-image not work*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.stay-container {
+    margin: auto;
+    max-width: 555px;
+    padding: 70px;
+}
+.stay-with-header {
+    padding: 70px 0 30px 0;
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+}
+.stay-with-header h2 {
+    margin: 5px;
+    color: #ffffff;
+    font-size: 41px;
+    font-weight: 400;
+}
+.stay-with-header p {
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+}
+/*STAY WITH FORM*/
+.stay-form {
+    margin: auto;
+    max-width: 566px;
+    padding:0 5px 80px;
+}
+.input-text-style {
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #999;
+    border-radius: 2px;
+    outline: none;
+}
+.input-text-style:focus {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.textarea-input {
+    height: 160px;
+    resize: none;
+}
+.newsletter-checkbox {
+    margin: 10px 0;
+}
+.checkbox-label {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+}
+.send-button {
+    float: right;
+    padding: 16px 50px;
+}
+/*FOOTER*/
+footer {
+    background-color: #f6f9f9;
+}
+.footer-container {
+    padding: 25px 5px;
+    margin: auto;
+    max-width: 1170px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+.footer-container p {
+    flex: 1 1;
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer-social-link {
+    margin: 3px;
+    padding: 13px;
+    text-align: center;
+    background-color: #15a4fa;
+    border-radius: 2px;
+}
+.footer-social-block ul {
+    list-style: none;
+}
+.footer-social-block ul li {
+    float: left;
+}
+.social-facebook {
+    padding: 13px 15px;
+}
+/*social networks hover*/
+.social-facebook:hover {
+    background-color: #3b5998;
+}
+.social-twitter:hover {
+    background-color: #55acee;
+}
+.social-google:hover {
+    background-color: #dd4b39;
+}
+.social-linked-in:hover {
+    background-color: #0976b4;
+}
 
 
 
@@ -134,9 +310,24 @@ header a {
     .feature-flex-element {
         margin: 15px;
     }
+    .portfolio-header {
+        padding: 30px 0;
+    }
+    .portfolio-image-container {
+        padding-bottom: 25px;
+    }
+    .stay-with-header {
+        padding: 30px 0 30px 0;
+    }
+    .stay-form {
+        padding:0 5px 30px;
+    }
 }
 @media only screen and (max-width: 1600px) {
     .hero-section {
+        background-size: cover;
+    }
+    .stay-with-us {
         background-size: cover;
     }
 }
