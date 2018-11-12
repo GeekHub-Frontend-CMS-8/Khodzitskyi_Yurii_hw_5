@@ -22,9 +22,7 @@ header a {
 }
 /*HERO*/
 .hero-section {
-    background-color: #767e8c;/*if background-image not work*/
-    background-image: url("../img/hero-background.png");
-    background-repeat: no-repeat;
+    background: #767e8c url("../img/hero-background.png") no-repeat;
     background-size: 100%;
 }
 .hero-container {
@@ -140,7 +138,7 @@ header a {
     margin: auto;
     display: flex;
     flex-flow: row wrap;
-    flex-justify: space-around;
+    justify-content: space-around;
 }
 .portfolio-image-element {
     position: relative;
@@ -211,9 +209,7 @@ header a {
 }
 /*Stay with container*/
 .stay-with-us {
-    background-image: url("../img/stay-with-us-back.png");
-    background-color: #767e8c;/*if background-image not work*/
-    background-repeat: no-repeat;
+    background: #767e8c url("../img/stay-with-us-back.png") no-repeat;
     background-size: 100%;
 }
 .stay-container {
@@ -280,10 +276,10 @@ footer {
 .footer-container {
     padding: 25px 5px;
     margin: auto;
-    max-width: 1170px;
     display: flex;
     flex-flow: row wrap;
     align-content: space-between;
+    max-width: 1170px;
 }
 .footer-container p {
     flex: 1 1;
