@@ -72,6 +72,16 @@ header a {
     margin: auto;
     text-align: center;
 }
+.simple-gradient-background {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 2px;
+    background: linear-gradient(to right, #48baff 50%, #5fc3ff 50%);
+    align-items: center;
+    justify-content: center;
+}
 .simple-pure-container h2 {
     color: #2d3950;
     font-size: 40px;
